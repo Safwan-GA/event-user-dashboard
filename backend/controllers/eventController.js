@@ -17,7 +17,7 @@ exports.createEvent = async (req, res) => {
       description,
       date,
       category,
-      createdBy: req.user.email, //  Use Firebase UID
+      createdBy: req.user.email, 
     });
 
     res.status(201).json({ message: "Event created successfully", event });
